@@ -32,6 +32,8 @@ public class HelloController {
 
     private Button tryAgainButton;
 
+    private String word = words[random.nextInt(words.length)];
+
     @FXML
     protected void initialize() {
         welcomeText.setText("Welcome to JavaWordle!");
@@ -41,13 +43,14 @@ public class HelloController {
         gameBoard[2] = new Label[]{box20, box21, box22, box23, box24};
         gameBoard[3] = new Label[]{box30, box31, box32, box33, box34};
         gameBoard[4] = new Label[]{box40, box41, box42, box43, box44};
+
     }
 
     @FXML
     protected void checkGuess() {
 
       Label[] currentRowLabels = gameBoard[currentRow];
-      String word = words[random.nextInt(words.length)];
+
         String guess = guessInput.getText();
         for (int i = 0; i < Math.min(guess.length(), 5); i++) {
             String letter = guess.substring(i, i + 1);
@@ -69,9 +72,10 @@ public class HelloController {
         currentRow = 0;
         for (Label[] labels : gameBoard) {
             for (Label label : labels) {
-                label.setText("");
+                label.setText(" ");
                 label.setStyle("-fx-background-color: white");
 
             }
+            word = words[random.nextInt(words.length)];
     }
         }}
