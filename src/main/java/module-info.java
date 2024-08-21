@@ -1,8 +1,8 @@
-module com.example.javawordle {
+module com.project.javawordle {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.javawordle to javafx.fxml;
-    exports com.example.javawordle;
+    opens com.project.javawordle to javafx.fxml;
+    exports com.project.javawordle;
 }
