@@ -12,7 +12,7 @@
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
-    <Label fx:id="welcomeText" />
+    <Label fx:id="welcomeText" alignment="CENTER" prefHeight="50.0" textAlignment="CENTER" />
    <HBox id="rowOne" fx:id="row00" prefHeight="100.0" prefWidth="200.0">
       <children>
          <Label fx:id="box00" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
@@ -233,7 +233,7 @@
          </Label>
       </children>
    </HBox>
-   <TextField fx:id="guessInput" maxWidth="-Infinity" prefWidth="200.0" />
-    <Button onAction="#checkGuess" onKeyPressed="#checkGuess" text="Guess!" />
+   <TextField fx:id="guessInput" maxWidth="-Infinity" prefWidth="200.0"/>
+    <Button fx:id="checkGuessBtn" defaultButton="true" disable="false" onAction="#checkGuess" onKeyPressed="#checkGuess" text="Guess!" visible="true" />
    <Button fx:id="tryAgainBtn" mnemonicParsing="false" onAction="#tryAgain" onKeyPressed="#checkGuess" text="Try again!" />
 </VBox>
