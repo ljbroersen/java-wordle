@@ -1,0 +1,23 @@
+
+
+Version:	3.50
+CmdLine:	C:\Users\ljbro\Desktop\Java\java-wordle\out\artifacts\java_wordle_jar\java-wordle.exe --l4j-debug
+JNI:		No
+WOW64:		Yes
+Working dir:	C:\Users\ljbro\Desktop\Java\java-wordle\out\artifacts\java_wordle_jar\.
+Requires JDK:	No
+Requires 64-Bit: No
+Java min ver:	
+Java max ver:	
+Substitute:	JAVA_HOME = 
+Substitute:	PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\PostgreSQL\12\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\ljbro\AppData\Local\Microsoft\WindowsApps;C:\Users\ljbro\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ljbro\AppData\Local\GitHubDesktop\bin;C:\Users\ljbro\AppData\Roaming\npm;C:\Users\ljbro\.bun\bin;C:\Users\ljbro\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;;C:\Users\ljbro\AppData\Roaming\Programs\Zero Install;C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin
+JRE paths:	;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\PostgreSQL\12\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Git\cmd;C:\Users\ljbro\AppData\Local\Microsoft\WindowsApps;C:\Users\ljbro\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ljbro\AppData\Local\GitHubDesktop\bin;C:\Users\ljbro\AppData\Roaming\npm;C:\Users\ljbro\.bun\bin;C:\Users\ljbro\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;;C:\Users\ljbro\AppData\Roaming\Programs\Zero Install;C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin
+Check launcher:	C:\Program Files\Common Files\Oracle\Java\javapath\bin\javaw.exe (not found)
+Check launcher:	C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin\javaw.exe (OK)
+Version string: 1.021.000_004 / 64-Bit (OK)
+Main class:	com.project.javawordle.EntryPoint
+Info:		Classpath not defined.
+Launcher:	C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin\javaw.exe
+Launcher args:	-classpath "C:\Users\ljbro\Desktop\Java\java-wordle\out\artifacts\java_wordle_jar\java-wordle.exe" com.project.javawordle.EntryPoint
+Args length:	132/32768 chars
+Exit code:	0
