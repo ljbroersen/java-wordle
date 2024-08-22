@@ -2,23 +2,14 @@ package com.project.javawordle;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
-import javax.swing.*;
-import java.awt.event.ActionEvent;
 
 public class HelloViewController {
 
     @FXML
-public Label labelMain;
-
-    @FXML
-    public Button startGameButton;
-
+    private Button startGameButton;
 
     @FXML
     protected void handleStartGame() {
@@ -37,5 +28,4 @@ public Label labelMain;
         System.out.println("Can't load new window.");
     }
 }
-
 }

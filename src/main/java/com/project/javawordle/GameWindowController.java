@@ -2,6 +2,7 @@ package com.project.javawordle;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import java.util.Random;
@@ -31,21 +32,29 @@ public class GameWindowController {
     Random random = new Random();
 
     @FXML
-    private Button tryAgainButton = new Button();
-
-    @FXML
     private Button checkGuessBtn = new Button();
 
     private String word = words[random.nextInt(words.length)];
 
+    private boolean difficultyBoolean = false;
+
+    @FXML
+    private Hyperlink hardDifficulty;
+
+    @FXML
+    private Hyperlink normalDifficulty;
+
     @FXML
     protected void initialize() {
-        welcomeText.setText("Welcome to JavaWordle!");
+        welcomeText.setText("Welcome to JavaWordle!\n" +
+                "You have 5 attempts to guess the word.");
         gameBoard[0] = new Label[]{box00, box01, box02, box03, box04};
         gameBoard[1] = new Label[]{box10, box11, box12, box13, box14};
         gameBoard[2] = new Label[]{box20, box21, box22, box23, box24};
         gameBoard[3] = new Label[]{box30, box31, box32, box33, box34};
         gameBoard[4] = new Label[]{box40, box41, box42, box43, box44};
+
+        normalDifficulty.setDisable(true);
     }
 
     @FXML
@@ -71,7 +80,7 @@ public class GameWindowController {
                         gameBoard[currentRow][i].setStyle("-fx-background-color: white");
                     }
 
-                    if (currentRow == 4) {
+                    if (currentRow == 4 || (currentRow == 2 && difficultyBoolean)) {
                         welcomeText.setText("Game over!\nThe correct word was: " + word);
                         guessInput.setDisable(true);
                         checkGuessBtn.setDisable(true);
@@ -101,4 +110,19 @@ public class GameWindowController {
             word = words[random.nextInt(words.length)];
     }
         }
-}
+
+    @FXML
+        protected void changeDifficultyToHard() {
+                welcomeText.setText("You have 3 attempts to guess the word.");
+                hardDifficulty.setDisable(true);
+                normalDifficulty.setDisable(false);
+                difficultyBoolean = true;
+            }
+
+    @FXML
+        protected void changeDifficultyToNormal() {
+            welcomeText.setText("You have 5 attempts to guess the word.");
+            normalDifficulty.setDisable(true);
+            hardDifficulty.setDisable(false);
+            difficultyBoolean = false;
+}}
