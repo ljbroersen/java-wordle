@@ -7,6 +7,8 @@ JavaFX with its bundled Scene Builder were also used to create the interface of 
 # How to download
 In the repository, you will find a .zip file called "JavaWordleV2.zip". Please download the file.<br>
 Next, inside this .zip file, you will find an .exe file called "java-wordle.exe". Please run the application and have fun playing!<br>
+<br>
+You will need a Java Runtime Environment (JRE) to be able to run the application!
 
 # How to play
 The interface is simple: you will see a welcome message ("Welcome to JavaWordle!"), 5 rows of each 5 columns, an input field, and two buttons: "Guess!" and "Try again!".
